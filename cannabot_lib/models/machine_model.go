@@ -8,9 +8,19 @@ package models
 import ()
 
 type Machine_Base struct {
-    Name        string          `json:"name"`
-    Sensors     []interface{}   `json:"sensors"`
-    Actuators   []interface{}   `json:"actuators"`
+	Name        string          `json:"name"`
+	Sensors     []interface{}   `json:"sensors"`
+    	Actuators   []interface{}   `json:"actuators"`
 }
 
+type Machine struct {
+    Machine_Base
+}
 
+func (m *Machine) AddSensor(s *Sensor) {
+	//TODO Implement
+}
+
+func (m *Machine) AddActuator(a *Actuator) {
+	//TODO Implement
+}

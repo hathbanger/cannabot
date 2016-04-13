@@ -1,7 +1,22 @@
 package models
 
-import()
+import (
+)
 
 type Report struct {
-    TODO IMPLEMENT
+    	Id		string		`json:"id`
+//	RawData		string		`json:"raw_data"`
 }
+
+/*
+func SendReport(r Report) {
+	//TODO Implement
+}
+*/
+
+func InitTestReport() *Report {
+	report := new(Report)
+	report.Id = "Test Report"
+	return report
+}
+
